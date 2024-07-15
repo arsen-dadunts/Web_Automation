@@ -19,7 +19,7 @@ Ensure you have the following software installed on your system:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/WebAutomation.git
+    git clone https://github.com/arsen-dadunts/Web_Automation.git
     cd WebAutomation
     ```
 2. Build the project:
