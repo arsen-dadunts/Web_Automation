@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+  <test name="Tests in 1024 x 768">
+    <parameter name="width" value="1024"/>
+    <parameter name="height" value="768"/>
+    <classes>
+      <class name="com.picsart.search.CustomTest"/>
+    </classes>
+  </test>
+  <test name="Tests in 1366 x 768">
+    <parameter name="width" value="1366"/>
+    <parameter name="height" value="768"/>
+    <classes>
+      <class name="com.picsart.search.CustomTest"/>
+    </classes>
+  </test>
+  <test name="Tests in 1440 x 900">
+    <parameter name="width" value="1440"/>
+    <parameter name="height" value="900"/>
+    <classes>
+      <class name="com.picsart.search.CustomTest"/>
+    </classes>
+  </test>
+</suite>
