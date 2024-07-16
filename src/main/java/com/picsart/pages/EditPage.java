@@ -1,6 +1,5 @@
 package com.picsart.pages;
 
-
 import com.picsart.base.BasePage;
 import com.picsart.utils.DriverManager;
 import org.openqa.selenium.WebElement;

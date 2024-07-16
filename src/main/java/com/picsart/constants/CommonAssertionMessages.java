@@ -6,5 +6,7 @@ public class CommonAssertionMessages {
 
   public static final String SECTION_IS_DISPLAYED = "'%s' section" + IS_DISPLAYED;
   public static final String BUTTON_IS_DISPLAYED = "'%s' button" + IS_DISPLAYED;
+  public static final String ICON_IS_DISPLAYED = "'%s' icon" + IS_DISPLAYED;
   public static final String POPUP_IS_DISPLAYED = "'%s' popup" + IS_DISPLAYED;
+  public static final String IMAGE_IS_DISPLAYED = "'%s' image" + IS_DISPLAYED;
 }

@@ -1,7 +1,5 @@
 package com.picsart.utils;
 
-import static com.picsart.utils.LogManager.log;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -22,7 +20,6 @@ public class DriverManager {
   }
 
   public void quitDriver(WebDriver driver) {
-      log.info("Closing the driver");
       driver.quit();
       drivers.remove();
     }

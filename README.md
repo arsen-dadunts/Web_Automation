@@ -11,28 +11,33 @@ Ensure you have the following software installed on your system:
 * IntelliJ or Eclipse
 * Git
 * JDK 11
-* Apache Maven 3.6.x (https://maven.apache.org/download.cgi)
+* Apache Maven [3.6.x](https://maven.apache.org/download.cgi)
 * Google Chrome
-* ChromeDriver (WebDriver for Chrome) (https://googlechromelabs.github.io/chrome-for-testing/)
+* ChromeDriver [(WebDriver for Chrome)](https://googlechromelabs.github.io/chrome-for-testing/)
 
 ## Getting Started
 
 1. Clone the repository:
     ```bash
     git clone https://github.com/arsen-dadunts/Web_Automation.git
-    cd WebAutomation
+    cd Web_Automation
     ```
 2. Build the project:
     ```bash
-   mvn clean install
+   mvn clean install -DskipTests
     ```
 3. Install chromedriver
 
 ## Usage
 To run your TestNG tests, use the following Maven command:
 ```bash
-mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml
+mvn test
 ```
+or specifying testng.xml file path
+```bash
+mvn test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml
+```
+
 
 ## Project Structure
 
@@ -40,7 +45,7 @@ The project consists of the following files:
 - src to store tests: Page classes, tests' data, test scenarios, utility functions
 - pom.xml maven project file
 
-```bash
+```
 WebAutomation/
 ├── pom.xml
 ├── README.md
@@ -58,7 +63,6 @@ WebAutomation/
    │   │           │   ├── HomePage.java
    │   │           │   └── SearchPage.java
    │   │           └── utils
-   │   │               ├── Configs.java
    │   │               └── DriverManager.java
    │   └── resources
    │       └── config.properties
